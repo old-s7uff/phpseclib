@@ -1,7 +1,7 @@
 <?php
 include('Net/SSH2.php');
 
-$ssh = new Net_SSH2('69.69.69.69');
+$ssh = new Net_SSH2('69.69.69.69', '22');
 if (!$ssh->login('root', '69696969passwd')) {
     exit('Login Failed');
 }
